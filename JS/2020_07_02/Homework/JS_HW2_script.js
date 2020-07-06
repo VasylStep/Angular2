@@ -333,12 +333,12 @@
 //48// - Взяти масив з 10 чисел або створити його. Вивести в консоль тільки 
 //ті елементи, значення яких є парними.
 
-// let array10 = [1,2,3,4,5,6,7,8,9,10];
+// let array10 = [1, 11, 3, 4, 5, 6, 7, 81, 9, 10];
 
 // for (let index = 0; index < array10.length; index++) {
 
-//    if (index%2===0) {
-//       console.log(index);  
+//    if (array10[index] % 2 === 0) {
+//       console.log(array10[index]);
 //    }
 // }
 
@@ -347,22 +347,139 @@
 //циклу та push () скопіювати значення одного масиву в інший
 
 
-// let array10 = [1,2,3,4,5,6,7,8,9,10];
+// let array10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // let array10Empty = [];
+// for (let index = 0; index < array10.length; index++) {
+//    for (let index = 0; index < array10Empty.length; index++) {
+//    }
+//    array10Empty[index] = array10[index];
+// }
 
-//50
+
+
+// console.log(array10Empty)
+
+
+
+
+
+
+
+//50- Взяти масив з 10 чисел або створити його. Створити 2й порожній масив. За допомогою будь-якого циклу 
+//скопіювати значення одного масиву в інший.
+
+// let array = [2,17,13,6,22,31,45,66,100,-18];
+// let arrayEmpty=[];
+// for (let index = 0; index<array.length; index++) {
+//    arrayEmpty.push(array[index]);
+//    //console.log(arrayEmpty)
+//    //console.log(arrayEmpty)
+// }
+
+// console.log(arrayEmpty)
+
+
+
+
+
+
 
 //56--зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
 //перебрати його циклом while
 
-let i =0;
+// let i =0;
 
-let array11 = [2,17,13,6,22,31,45,66,100,-18];
-while (i<array11.length) {
-   console.log (array11[i]); 
- i++; 
-}
-      
+// let array11 = [2,17,13,6,22,31,45,66,100,-18];
+// while (i<array11.length) {
+//    console.log (array11[i]); 
+//  i++; 
+// }
+
+//57--зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+//2. перебрати його циклом for
+
+// let array11 = [2,17,13,6,22,31,45,66,100,-18];
+// for (let index = 0; index < array11.length; index++) {
+//    console.log (array11[index]);
+// }
+
+//58--зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+//3. перебрати циклом while та вивести  числа тільки з непарним індексом
+// let i =0;
+// let array11 = [2,17,13,6,22,31,45,66,100,-18];
+// while (i<array11.length) {
+//    if (array11[i]%2!==0) {
+//       console.log (array11[i]);
+//    }
+//  i++; 
+// }
+
+//59-- перебрати циклом for та вивести  числа тільки з непарним індексом
+// let array11 = [2,17,13,6,22,31,45,66,100,-18];
+// for (let index = 0; index < array11.length; index++) {
+//   if ((array11[index])%2!==0) {
+//      console.log (array11[index]);
+//   }
+// }
+
+//60. перебрати циклом while та вивести  числа тільки парні  значення
+   // let array11 = [2,17,13,6,22,31,45,66,100,-18];
+   // let i=0;
+   // while (i<array11.length) {
+   //    if (array11[i]%2===0) {
+   //       console.log(array11[i])
+   //    }
+   //    i++;
+   // }
+
+//61--6. перебрати циклом for та вивести  числа тільки парні  значення
+
+// let array11 = [2,17,13,6,22,31,45,66,100,-18];
+// for (let index = 0; index < array11.length; index++) {
+//   if ((array11[index])%2===0) {
+//      console.log (array11[index]);
+//   }
+// }
+
+//627. замінити кожне число кратне 3 на слово "okten"
+// let array11 = [2,17,13,6,22,31,45,66,100,-18];
+// for (let index = 0; index < array11.length; index++) {
+//   if ((array11[index])%3===0) {
+//     array11[index] = 'okten'
+
+//   }
+
+// }
+
+// console.log (array11);
+
+//63 8. вивести масив в зворотньому порядку.
+
+// let array = [2,17,13,6,22,31,45,66,100,-18];
+
+// let arrayEmpty=[];
+// for (let index = array.length-1; index >= 0; index--) {
+//    arrayEmpty.push(array[index]);
+
+
+// }
+// console.log(arrayEmpty)
+
+//67 --- заповнити його 50 парними числами за допомоги циклу.
+
+// let array = [];
+// for (let index = 0; index <= 50; index=index+2) {
+//   array.push(index);
+// }
+// console.log (array);
+
+//68---- заповнити його 50 непарними числами за допомоги циклу.
+
+// let array = [];
+// for (let index = 1; index < 50; index=index+2) {
+//    array.push(index);
+//  }
+//  console.log (array);
 
 
 
