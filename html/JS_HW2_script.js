@@ -294,8 +294,13 @@
 
 //40 -- - Дан масив [1, 2, 3]. Додайте йому в початок елементи 4, 5, 6.
 
-let array7 = [1, 2, 3];
-console.log(array7);
+// let array7 = [1, 2, 3];
+// array7.unshift(4,5,6);
+// console.log (array7);
+
+document.write ('sdfsdf');
+
+
 
 
 
