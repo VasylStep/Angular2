@@ -567,15 +567,15 @@
 //87 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
  //додати його в інший масив.
 
-//  let arr1 = [5, 9, 6,'BBB', 78, 654, 'AA',25, 4, true, false ];
-//  let arr2 = [];
+ let arr1 = [5, 9, 6,'BBB', 78, 654, 'AA',25, 4, true, false ];
+ let arr2 = [];
 
-// for (let i = 0; i < arr1.length; i++) {
-//    if (typeof arr1[i]==='number') {
-//       arr2.unshift(arr1[i]); 
+for (let i = 0; i < arr1.length; i++) {
+   if (typeof arr1[i]==='number') {
+      arr2.unshift(arr1[i]); 
       
-//    }
+   }
    
-// }
+}
 console.log (arr2);
 
