@@ -544,8 +544,44 @@
 
 // 3. вывести на консоль  каждый третий елемент
  //но при условии что его значение является парным.
+//  min=8;
+// max=732;
+// let arr = [];
+// for (let i = 0; i < 50; i+=3) {
+//    function getRndInteger(min, max) {
+//       return Math.floor(Math.random() * (max - min)) + min;
+//     }
+//     arr.push(getRndInteger(min, max));
+// }
+// console.log(arr);
+// for (let j = 0; j < arr.length; j++) {
+//    if ((arr[j])%2===0) {
+//       console.log(arr[j])
+//    }
+// }
 
-//4
+//4  вывести на консоль  каждый третий елемент
+ //но при условии что он имеет парное значение и
+ //записать их в другой массив.
+//  min=8;
+// max=732;
+// let arr = [];
+// let arr2 = [];
+// for (let i = 0; i < 50; i+=3) {
+//    function getRndInteger(min, max) {
+//       return Math.floor(Math.random() * (max - min)) + min;
+//     }
+//     arr.push(getRndInteger(min, max));
+// }
+// console.log(arr);
+// for (let j = 0; j < arr.length; j++) {
+//    if ((arr[j])%2===0) {
+//       console.log(arr[j])
+//       arr2.push(arr[j]);
+//    }
+// }
+// console.log(arr2);
+
 //5--5. Вывести каждый елемент массива у которого соседний с права элемент - парный
   //5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
 // let sum = 0;  
