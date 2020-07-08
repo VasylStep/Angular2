@@ -5,18 +5,18 @@ let greenDiv = document.getElementById('divka');
 console.log(greenDiv);
 
 greenDiv.style.backgroundColor = 'yellow';
-// // greenDiv.innerText = '<b> HELLO </b>';
-// greenDiv.innerHTML = '<b> HELLO </b>';
+// greenDiv.innerText = '<b> HELLO </b>';
+greenDiv.innerHTML = '<b> HELLO </b>';
 
-// let boldT = document.getElementsByClassName('boldText');
+let boldT = document.getElementsByClassName('boldText');
 
-// boldT[0].style.color = 'silver';
+boldT[0].style.color = 'silver';
 
-// for (let i = 0; i < boldT.length; i++) {
-//   boldT[i].style.fontSize = '24px';
-//   boldT[i].innerText = `JSCX-JUNE-202${i}`
-// }
-// ;
+for (let i = 0; i < boldT.length; i++) {
+  boldT[i].style.fontSize = '24px';
+  boldT[i].innerText = `JSCX-JUNE-202${i}`
+}
+;
 
 
 // let allDivs = document.getElementsByTagName('div');
