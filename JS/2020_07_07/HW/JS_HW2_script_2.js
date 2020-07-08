@@ -42,4 +42,8 @@ console.log('proba')
 // let divElement = document.getElementsByClassName('fc bp');
 // console.log(divElement);
 
+// let divElement = document.getElementsByTagName('div')
+
+
+
 
