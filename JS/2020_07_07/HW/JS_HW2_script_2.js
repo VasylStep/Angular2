@@ -6,7 +6,7 @@
 // - замініть текст параграфа з id 'rules' на будь-який інший
 // - змініть кожному елементу колір фону на червоний
 // - змініть кожному елементу колір тексту на синій
-// - отримати весь список класів елемента з id=rules і вивести їх в console.log --- ????
+// - отримати весь список класів елемента з id=rules і вивести їх в console.log 
 // - отримати всі елементи з класом fc_rules
 // - поміняти колір тексту у всіх елементів fc_rules на червоний
 
@@ -37,7 +37,15 @@ for (let i = 0; i < tagLi.length; i++) {
 
 console.log('proba')
 
+let idRules = document.getElementsByClassName('fc bp');
 
+for (let i = 0; i < idRules.length; i++) {
+   console.log(idRules[i]); 
+   
+}
+
+
+//console.log(idRules[i].classList)
 
 // let divElement = document.getElementsByClassName('fc bp');
 // console.log(divElement);
