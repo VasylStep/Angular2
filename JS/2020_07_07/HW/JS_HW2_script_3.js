@@ -3,9 +3,9 @@
 // -- змінює колір тексту елемнту з ід main_header на будь-який інший
 // -- робить шириниу елементу ul 400 пікселів
 // -- робить шириниу всіх елементів з класом linkList шириною 50%
-// -- отримує текст який зберігається в елементі з класом listElement2-???
+// -- отримує текст який зберігається в елементі з класом listElement2
 // -- отримує всі елементи li та змінює ім колір фону на сірий 
-// -- отримує всі елементи 'a' та додає їм клас anchor -??
+// -- отримує всі елементи 'a' та додає їм клас anchor 
 // -- отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
 // -- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
 // -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
@@ -51,14 +51,14 @@
 
 //// -- отримує всі елементи 'a' та додає їм клас element_XXX.--??? (не знаю як додати ХХХ) 
 //Де XXX - текстовий контент елементу a
-// let aTeg = document.getElementsByTagName('a');
-// for (let i = 0; i < aTeg.length; i++) {
-//    aTeg[i].classList.add('element');
- 
-//   //console.log(aTeg);
-// }
+let aTeg = document.getElementsByTagName('a');
+for (let i = 0; i < aTeg.length; i++) {
+   aTeg[i].classList.add('element1');
+ //aTeg[i].classList.innerText==='XXX';
+  //console.log(aTeg);
+}
 
-// console.log(aTeg);
+console.log(aTeg);
 
 // -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
 // let subHeader = document.getElementsByClassName('sub-header')//???
