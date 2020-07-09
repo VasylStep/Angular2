@@ -118,20 +118,165 @@ driver={name:'Kokos',years:'1980', sex:'man',experience:'15'}]
 // }
 
 // - взять объекты из задания 1 и превратить каждый в json.
+// let jsonObject1=JSON.stringify(Object1); console.log(jsonObject1);
+// let jsonObject2=JSON.stringify(Object2); console.log(jsonObject2);
+// let jsonObject3=JSON.stringify(Object3); console.log(jsonObject3);
+// let jsonObject4=JSON.stringify(Object4); console.log(jsonObject4);
+// let jsonObject5=JSON.stringify(Object5); console.log(jsonObject5);
+
 // - взять json из задания 11 и превратить их обратно в объекты.
+// jsonObject1=JSON.parse(jsonObject1); console.log(jsonObject1);
+// jsonObject2=JSON.parse(jsonObject2); console.log(jsonObject2);
+// jsonObject3=JSON.parse(jsonObject3); console.log(jsonObject3);
+// jsonObject4=JSON.parse(jsonObject4); console.log(jsonObject4);
+// jsonObject5=JSON.parse(jsonObject5); console.log(jsonObject5);
+
 // - взять массив из задания 5,в цикле перебрать его объекты превратив их в json .
+// for (let i of cars) {
+//    i= JSON.stringify(i);
+//    console.log(i);
+// }
+
+// for (let i of cars2) {
+//    i= JSON.stringify(i);
+//    console.log(i);
+// }
+
 // - взять массив из задания 6,в цикле перебрать его объекты превратив их в json .
+
+// for (let i of cities) {
+//    i= JSON.stringify(i);
+//    console.log(i);
+// }
+
 // - взять массив из задания 7,в цикле перебрать его объекты превратив их в json и сразу скоприовать в новый массив.
-// - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
-// - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. Скопировать все skills всех пользователей в отедльный массив
+// let jsonCars2 = [];
+// for (let i = 0; i < cars2.length; i++) {
+//    jsonCars2[i]=JSON.stringify(cars2[i]);
+//    console.log(jsonCars2[i]);  
+// }
+// - Создать массив пользователей. 
+//У каждого пользователя обязательно должено быть поле skills которое является массивом. 
+//Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
+// let users = [
+//    {user1:'XXX',age: 25, 
+//    skils:['drive','english']},
+//    {user2:'YYY',age: 25, 
+//    skils:['drive','english']},
+//    {user3:'ZZZ',age: 25, 
+//    skils:['drive','english']}];
+   // - Создать массив пользователей. 
+//У каждого пользователя обязательно должено быть поле skills которое является массивом. 
+//Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. 
+//Скопировать все skills всех пользователей в отедльный массив
+///???? (не знаю як зробити);
+
 
 // - За допомогою 2х циклів циклів проітеррувати  даний масив і масив кожного об'єкта.
-//  let users = [{name: 'vasya', age: 31, status: false, skills: ['java', 'js']}, {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']}, {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']}, {name: 'olya', age: 28, status: false, skills: ['java', 'js']}, {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
+  let users2 = [
+   {name: 'vasya', age: 31, status: false, skills: ['java', 'js']}, 
+   {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']}, 
+   {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']}, 
+   {name: 'olya', age: 28, status: false, skills: ['java', 'js']},
+   {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
+// не розумію чого один код працює а інший не працює
+//цей код  працює -- тепер зрозумів різницю
+// for (let i = 0; i < users2.length; i++) {
+//    console.log (users2[i]);
+//    for (let j = 0; j < users2[i].skills.length; j++) { 
+//       console.log(users2[i].skills[j]);
+//    }
+//    }
+//цей код працює
+// for (let u of users2) {
+//    console.log (u);
+// //    for (let i = 0; i < u.skills.length; i++) {
+// //       console.log(u.skills[i]);
+// //    }
+// }
+
+
+// - З масиву users за допомогою циклу витягнути адреси користувачів 
+// і записати (скопіювати) їх в інший порожній масив.
+// Витягнув з готового масиву skills -- шоб не створювати новий масив.
+
+//????????????????? не знаю як витягнути адреси з обєкту.
+            			let users = [{
+            				name: 'vasya',
+            				age: 31,
+            				status: false,
+            				address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+            			}, {
+            				name: 'petya',
+            				age: 30,
+            				status: true,
+            				address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+            			}, {
+            				name: 'kolya',
+            				age: 29,
+            				status: true,
+            				address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+            			}, {
+            				name: 'olya',
+            				age: 28,
+            				status: false,
+            				address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+            			}, {
+            				name: 'max',
+            				age: 30,
+            				status: true,
+            				address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+            			}, {
+            				name: 'anya',
+            				age: 31,
+            				status: false,
+            				address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+            			}, {
+            				name: 'oleg',
+            				age: 28,
+            				status: false,
+            				address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+            			}, {
+            				name: 'andrey',
+            				age: 29,
+            				status: true,
+            				address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+            			}, {
+            				name: 'masha',
+            				age: 30,
+            				status: true,
+            				address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+            			}, {
+            				name: 'olya',
+            				age: 31,
+            				status: false,
+            				address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+            			}, {
+            				name: 'max',
+            				age: 31,
+            				status: true,
+            				address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+            			}];
+//????????????????? не знаю як витягнути адреси з обєкту.
+
+   // let home = [];
+   // for (let i = 0; i < users.length; i++) {
+   //    //console.log (users[i]);
+   //    for (let j = 0; j < users[i].address.length; j++) {
+   //       home[j]=users[i].address[j]
+   //       console.log(home);
+   //    }
+   
+   //    }
 
 
 
-// - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
-// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
+// - За допомоги циклу проітерувати  масив users, 
+//записати кожного юзера в сівй блок за допомоги document.createElement. 
+//Всі данні в одному блоці.
+
+
+
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
