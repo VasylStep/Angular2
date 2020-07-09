@@ -1,11 +1,11 @@
-// - создать 5 объектов. В каждом объекте не менее 3х полей. 
+//1 - создать 5 объектов. В каждом объекте не менее 3х полей. 
 //Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
 let Object1= {nameA:'kokosA', statusA:'oneA', adresA:'streetA'}
 let Object2= {nameB:'kokosB', statusB:'oneB', adresB:'streetB'}
 let Object3= {nameC:'kokosC', statusC:'oneC', adresC:'streetC'}
 let Object4= {nameD:'kokosD', statusD:'oneD', adresD:'streetD'}
 let Object5= {nameF:'kokosF', statusF:'oneF', adresF:'streetF'}
-// - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. 
+//2 - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. 
 //Опишите что угодно, машину, картину, болт... 
 //Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
 let man1 = { nameA: 'kokosA', skillsA : ['javaA','jsA'] , wifeA: { nameA: 'cherryA' } };
@@ -13,62 +13,110 @@ let man2 = { nameB: 'kokosB', skillsB : ['javaB','jsB'] , wifeB: { nameB: 'cherr
 let man3 = { nameC: 'kokosC', skillsC : ['javaC','jsC'] , wifeC: { nameC: 'cherryC' } };
 let man4 = { nameD: 'kokosD', skillsD : ['javaD','jsD'] , wifeD: { nameD: 'cherryD' } };
 let man5 = { nameF: 'kokosF', skillsF : ['javaF','jsF'] , wifeF: { nameF: 'cherryF' } };
-// - При помощи for in вывести все ключи всех объектов из задания 1 и 2
+//3 - При помощи for in вывести все ключи всех объектов из задания 1 и 2
 
-// - При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
-for (let keys in Object1) {
-   console.log(keys);
-};
-for (let keys in Object2) {
-   console.log(keys);
-};for (let keys in Object3) {
-   console.log(keys);
-};
-for (let keys in Object4) {
-   console.log(keys);
-};
-for (let keys in Object5) {
-   console.log(keys);
-};
-for (let keys in man1) {
-   console.log(keys);
-};
-for (let keys in man2) {
-   console.log(keys);
-};
-for (let keys in man3) {
-   console.log(keys);
-};
-for (let keys in man4) {
-   console.log(keys);
-};
-for (let keys in man5) {
-   console.log(keys);
-};
+//4 - При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
+// for (let keys in Object1) {
+//    console.log(keys);
+// };
+// for (let keys in Object2) {
+//    console.log(keys);
+// };for (let keys in Object3) {
+//    console.log(keys);
+// };
+// for (let keys in Object4) {
+//    console.log(keys);
+// };
+// for (let keys in Object5) {
+//    console.log(keys);
+// };
+// for (let keys in man1) {
+//    console.log(keys);
+// };
+// for (let keys in man2) {
+//    console.log(keys);
+// };
+// for (let keys in man3) {
+//    console.log(keys);
+// };
+// for (let keys in man4) {
+//    console.log(keys);
+// };
+// for (let keys in man5) {
+//    console.log(keys);
+// };
 
-//  Создать массив из 10 объектов cars и заполнить его машинами с полями модель, 
+//5  Создать массив из 10 объектов cars и заполнить его машинами с полями модель, 
 //год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
 let cars = [
-car1={model:'',year:'1980',power:'1.0',colour:'red'},
-car2={model:'',year:'1981',power:'1.1',colour:'green'},
-car3={model:'',year:'1982',power:'1.2',colour:'red'},
-car4={model:'',year:'1983',power:'1.3',colour:'green'},
-car5={model:'',year:'1984',power:'1.4',colour:'grey'},
-car6={model:'',year:'1985',power:'1.5',colour:'red'},
-car7={model:'',year:'1986',power:'1.6',colour:'grey'},
-car8={model:'',year:'1987',power:'1.7',colour:'green'},
-car9={model:'',year:'1988',power:'1.8',colour:'red'},
-car10={model:'',year:'1989',power:'1.9',colour:'red'}
+car1={model:'MersA',year:'1980',power:'1.0',colour:'red'},
+car2={model:'MersB',year:'1981',power:'1.1',colour:'green'},
+car3={model:'MersC',year:'1982',power:'1.2',colour:'red'},
+car4={model:'MersD',year:'1983',power:'1.3',colour:'green'},
+car5={model:'MersF',year:'1984',power:'1.4',colour:'grey'},
+car6={model:'MersG',year:'1985',power:'1.5',colour:'red'},
+car7={model:'MersH',year:'1986',power:'1.6',colour:'grey'},
+car8={model:'MersK',year:'1987',power:'1.7',colour:'green'},
+car9={model:'MersL',year:'1988',power:'1.8',colour:'red'},
+car10={model:'MersW',year:'1989',power:'1.9',colour:'red'}
 ];
-// - Создать массив объектов cities и заполнить его объектами с полями 
+//6 - Создать массив объектов cities и заполнить его объектами с полями 
 //название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
-let cities = [çity1={name:'',population:'',country:'',region:''},];
-
-
-// - Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
+let cities = [çity1={name:'AAA',population:'BBB',country:'CCC',region:'DDD'},];
+//7 - Создать массив объектов cars и заполнить его машинами с полями модель, 
+//год выпуска, мощность, цвет, водитель. 
+//Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
+let cars2 = [{model:'Mercrdes',year:'1980',power:'1.0',colour:'red'},
+driver={name:'Kokos',years:'1980', sex:'man',experience:'15'}] 
 // - проитерировать каждый массив из задания 5,6,7 при помощи while.
+// let i=0;
+// while (i<cities.length) {
+// console.log(cities[i]);
+// i++;
+// }
+
+// let i=0;
+// while (i<cars2.length) {
+// console.log(cars2[i]);
+// i++;
+// }
+
+// let i=0;
+// while (i<cars.length) {
+// console.log(cars[i]);
+// i++;
+// }
+
+
+
 // - проитерировать каждый массив из задания 5,6,7 при помощи for .
+// for (let i = 0; i < cars.length; i++) {
+//    console.log(cars[i]);
+   
+// }
+// for (let i = 0; i < cities.length; i++) {
+//    console.log(cities[i]);
+   
+// }
+// for (let i = 0; i < cars2.length; i++) {
+//    console.log(cars2[i]);
+   
+// }
+
+
 // - проитерировать каждый массив из задания 5,6,7 при помощи  for of.
+// for (let i of cars) {
+//    console.log(i);
+// }
+
+// for (let i of cities) {
+//    console.log(i);
+// }
+
+// for (let i of cars2) {
+//    console.log(i);
+// }
+
 // - взять объекты из задания 1 и превратить каждый в json.
 // - взять json из задания 11 и превратить их обратно в объекты.
 // - взять массив из задания 5,в цикле перебрать его объекты превратив их в json .
