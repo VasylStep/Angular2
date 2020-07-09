@@ -275,6 +275,17 @@ driver={name:'Kokos',years:'1980', sex:'man',experience:'15'}]
 //записати кожного юзера в сівй блок за допомоги document.createElement. 
 //Всі данні в одному блоці.
 
+for (let u of users) {
+   
+  let userDiv = document.createElement('div');
+  userDiv.style.background= 'green';
+  userDiv.style.height = '200px';
+  userDiv.style.margin = '25px';
+
+  
+  document.body.appendChild(userDiv);
+  userDiv.innerText=JSON.stringify(u);
+}
 
 
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
