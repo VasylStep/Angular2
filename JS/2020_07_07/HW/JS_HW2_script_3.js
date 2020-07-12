@@ -51,14 +51,18 @@
 
 //// -- отримує всі елементи 'a' та додає їм клас element_XXX.--??? (не знаю як додати ХХХ) 
 //Де XXX - текстовий контент елементу a
-let aTeg = document.getElementsByTagName('a');
-for (let i = 0; i < aTeg.length; i++) {
-   aTeg[i].classList.add('element1');
- //aTeg[i].classList.innerText==='XXX';
-  //console.log(aTeg);
-}
+// Переписав але не розумію як перевірити чи працює - не зробив одним словом.
+// let aTeg = document.getElementsByTagName('a');
+// for (let i = 0; i < aTeg.length; i++) {
+   
+// //aTeg[i].classList.add('element1');
+// const a = aTeg[i];
+// const aText = a.innerText;
+// a.classList.add (`element_${aText}`)
 
-console.log(aTeg);
+// }
+
+
 
 // -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
 // let subHeader = document.getElementsByClassName('sub-header')//???
