@@ -394,7 +394,18 @@ for (let i = 0; i < usersWithId.length; i++) {
 // - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
 // - змінити цей текст використовуючи селектори id, class,  tag
 // - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+
 // - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+// запитатись на консультації
+
+let table1 =document.createElement('div');
+table1.style.background = 'grey';
+table1.innerText = '-';
+document.body.appendChild (table1);
+
+
+
+
 // - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
