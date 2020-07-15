@@ -198,6 +198,19 @@ document.body.appendChild (parAgraf);
 parAgraf('p','cccSSS')
 //11
 //18 - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+let cars = [
+	car01 = { model: 'Mersedes__', year: '1980', power: '1.0', colour: 'red'   },
+	car02 = { model: 'Volvo_____', year: '1981', power: '1.1', colour: 'green' },
+	car03 = { model: 'Toyota____', year: '1982', power: '1.2', colour: 'red'   },
+	car04 = { model: 'Laz_______', year: '1983', power: '1.3', colour: 'green' },
+	car05 = { model: 'Mitsubishi', year: '1984', power: '1.4', colour: 'grey'  },
+	car06 = { model: 'Reno______', year: '1985', power: '1.5', colour: 'red'   },
+	car07 = { model: 'Pezo______', year: '1986', power: '1.6', colour: 'grey'  },
+	car08 = { model: 'Fiat______', year: '1987', power: '1.7', colour: 'green' },
+	car09 = { model: 'Volksvagen', year: '1988', power: '1.8', colour: 'red'   },
+	car10 = { model: 'Nissan____', year: '1989', power: '1.9', colour: 'red'   }
+];
+
 //19 Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
 //20 - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 //21 Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
