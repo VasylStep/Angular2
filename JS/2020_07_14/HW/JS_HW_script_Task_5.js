@@ -173,7 +173,10 @@ let car =
 	made: 'Japan',
 	year: 2018,
 	speed: 250,
-	volume: 3.1
+	volume: 3.1,
+	addDriver(driver) {
+		this.driver = driver;
+	}
 };
 function drive() {
 	console.log('їдемо зі швидкістю' + ` ${car.speed} ` + 'км/на годину')
@@ -190,22 +193,21 @@ function increaseMaxSpeed(newSpeed) {
 }
 increaseMaxSpeed(10);
 function changeYear(newValue) {
-	car.year=newValue;
-	console.log (`Новий рік випуску автомобіля буде ${newValue}`)
+	car.year = newValue;
+	console.log(`Новий рік випуску автомобіля буде ${newValue}`)
 }
-changeYear (2020)
-function addDriver(driver) {
-	let driver ={
+changeYear(2020)
+
+
+let driver = {
 	driverYear: 30,
 	driverHeight: 1.8,
 	driverAge: 80
-} 
+};
 
-}
-///Не можу обєднати драйвера і кар -- не знаю як то зробити????????
+car.addDriver(driver);
 
-
-
+console.log(car);
 
 
 
@@ -317,12 +319,83 @@ function addDriver(driver) {
 // --Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 // -- за допоиоги циклу знайти яка попелюшка повинна бути з принцом
 // ==============================================
+// class princesGirl{
+// 	constructor(name,age,legSise){
+// this.name=name;
+// this.age=age;
+// this.legSise=legSise;
+// 	}
+// };
+// let princesGirl_1 = new princesGirl ('Lina', 18, 25);
+// console.log (princesGirl_1);
+// let princesGirl_2 = new princesGirl ('PoLina', 18, 25);
+// let princesGirl_3 = new princesGirl ('MaLina', 19, 26);
+// let princesGirl_4 = new princesGirl ('KaLina', 20, 27);
+// let princesGirl_5 = new princesGirl ('BaLina', 21, 28);
+// let princesGirl_6 = new princesGirl ('DeLina', 22, 29);
+// let princesGirl_7 = new princesGirl ('FoLina', 23, 30);
+// let princesGirl_8 = new princesGirl ('KaLina', 24, 31);
+// let princesGirl_9 = new princesGirl ('ZoLina', 25, 32);
+// let princesGirl10 = new princesGirl ('NeLina', 26, 33);
 
+// let array = [princesGirl_1,princesGirl_2,princesGirl_3,princesGirl_4,princesGirl_5,
+// princesGirl_6,princesGirl_7,princesGirl_8,princesGirl_9,princesGirl10];
 
+// let prince={
+// name: 'Ivan',
+// age: 35,
+// princesShoes:32,
+// }
+// for (let i = 0; i < array.length; i++) {
 
+// 	if (prince.princesShoes===array[i].legSise) {
+
+// 		console.log (`Принцеса ${array[i].name} буде дружиною принца`)
+// 	}
+// }
 //7 ==============================================
 // -створити функцію конструктор попелюшка з полями ім'я, вік, розмір ноги
 // --Створити 10 попелюшок , покласти їх в масив
 // --Сторити об'єкт типу "принц" за допомоги функції конструктора з полями ім'я, вік, туфелька яку він знайшов, та функцію "пошук попелюшки"
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
 // ==============================================
+
+// Ту задачу поміг зробити ментор Юра -- сам не додумався як то все поєднати.
+
+function princesGirl(name, age, legSise) {
+	this.name = name;
+		this.age = age;
+		this.legSise = legSise;
+};
+
+let princesGirl_1 = new princesGirl('Lina', 18, 25);
+console.log(princesGirl_1);
+let princesGirl_2 = new princesGirl('PoLina', 18, 25);
+let princesGirl_3 = new princesGirl('MaLina', 19, 26);
+let princesGirl_4 = new princesGirl('KaLina', 20, 27);
+let princesGirl_5 = new princesGirl('BaLina', 21, 28);
+let princesGirl_6 = new princesGirl('DeLina', 22, 29);
+let princesGirl_7 = new princesGirl('FoLina', 23, 30);
+let princesGirl_8 = new princesGirl('KaLina', 24, 31);
+let princesGirl_9 = new princesGirl('ZoLina', 25, 32);
+let princesGirl10 = new princesGirl('NeLina', 26, 33);
+
+let array = [princesGirl_1, princesGirl_2, princesGirl_3, princesGirl_4, princesGirl_5,
+	princesGirl_6, princesGirl_7, princesGirl_8, princesGirl_9, princesGirl10];
+
+
+function Prince(name, age, princesShoes) {
+	this.name = name;
+	this.age = age;
+	this.princesShoes = princesShoes;
+
+	this.action = function (array) {
+		for (let i = 0; i < array.length; i++) {
+			if (this.princesShoes === array[i].legSise) {
+				console.log(`Принцеса ${array[i].name} буде дружиною принца`)
+			}
+		}
+	}
+}
+let princeAndriy = new Prince('andriy', 34,29 );
+princeAndriy.action(array);
