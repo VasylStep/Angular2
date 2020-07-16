@@ -399,3 +399,11 @@ function Prince(name, age, princesShoes) {
 }
 let princeAndriy = new Prince('andriy', 34,29 );
 princeAndriy.action(array);
+//====================================================================
+let numbers = [11,-1,12,45,0];
+numbers.sort ()
+numbers.filter ()
+numbers.map ()
+numbers.forEach ()
+numbers.find ()
+numbers.reduce ()
