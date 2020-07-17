@@ -1,47 +1,114 @@
 
 //2 - создать массив с 20 числами.
-let arr = [2,88,-44,6,44,5,7,8,2,45,657,425,-10,35,75,42,65,8,24,10]
+let arr = [2, 88, -44, 6, 44, 5, 7, 8, 2, 45, 657, 425, -10, 35, 75, 42, 65, 8, 24, 10]
 //3 -- при помощи метода sort и колбека  отсортировать массив.
 // let resultArrSort =arr.sort ();
 // console.log (resultArrSort);
-let resultArrSort =arr.sort (function (a,b) {
-	return a-b})
-console.log (resultArrSort);
+let resultArrSort = arr.sort(function (a, b) {
+	return a - b
+})
+console.log(resultArrSort);
 //4 -- при помощи метода sort и колбека отсортировать массив в ниспадающем напралении.
-let resultArrSort2 =arr.sort (function (a,b) {
-	return b-a})
-console.log (resultArrSort2);
+let resultArrSort2 = arr.sort(function (a, b) {
+	return b - a
+})
+console.log(resultArrSort2);
 //5 -- при помощи filter получить числа кратные 3
-let resultFilter =arr.filter(function (num) {
-	if (num%3===0) {
+let resultFilter = arr.filter(function (num) {
+	if (num % 3 === 0) {
 		return true;
 	}
 })
-console.log (resultFilter);
+console.log(resultFilter);
 //6 -- при помощи filter получить числа кратные 10
-let resultFilter2 =arr.filter(function (num) {
-	if (num%10===0) {
+let resultFilter2 = arr.filter(function (num) {
+	if (num % 10 === 0) {
 		return true;
 	}
 })
-console.log (resultFilter2);
+console.log(resultFilter2);
 
 //7 -- перебрать (проитерировать) массив при помощи foreach()
+let copyArr = [];
+let resultForeach = arr.forEach(function (arr) {
+	copyArr.push(arr);
 
-//8 -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше
+})
+console.log(copyArr);
+
+
+//8 -- перебрать массив при помощи map() и получить новый массив 
+//в котором все значения будут в 3 раза больше
+
+let arrThree = arr.map(function (num) {
+	return num * 3;
+})
+console.log(arrThree);
 
 //10 - создать массив со словами на 15-20 элементов.
-//11 -- отсортировать его по алфавиту в восходящем порядке.
-//12 -- отсортировать его по алфавиту  в нисходящем порядке.
-//13 -- отфильтровать слова длиной менее 4х символов
-//14 -- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце
+let words = ['orem', 'ipsum', 'dolor', 'ame', 'consectetur', 'adipisicing', 'orro', 'iste', 'repudiandae', 'aperiam', 'cupiditate', 'delectus', 'fugiat', 'explicabo', 'saepe', 'quis', 'unde', 'nemo', 'libero', 'iure']
 
+
+
+//11 -- отсортировать его по алфавиту в восходящем порядке.
+let sortWords = words.sort()
+console.log(sortWords);
+//12 -- отсортировать его по алфавиту  в нисходящем порядке.
+console.log(words.reverse());
+//13 -- отфильтровать слова длиной менее 4х символов
+let word4 = words.filter(word => word.length <= 4);
+console.log(word4);
+
+//14 -- перебрать массив при помощи map() и получить новый массив 
+//в котором все значения будут со знаком "!" в конце
+let wordsZnak = words.map(function (word) {
+	return word + '!'
+})
+console.log(wordsZnak);
 //16 Все робити через функції масивів (foreach, map ...тд)
 //17 Дан масив :
-//18 let users = [ {name: 'vasya', age: 31, status: false}, {name: 'petya', age: 30, status: true}, {name: 'kolya', age: 29, status: true}, {name: 'olya', age: 28, status: false}, {name: 'max', age: 30, status: true}, {name: 'anya', age: 31, status: false}, {name: 'oleg', age: 28, status: false}, {name: 'andrey', age: 29, status: true}, {name: 'masha', age: 30, status: true}, {name: 'olya', age: 31, status: false}, {name: 'max', age: 31, status: true} ];
+//18 
+let users = [
+	{ name: 'vasya', age: 31, status: false },
+	{ name: 'petya', age: 30, status: true },
+	{ name: 'kolya', age: 29, status: true },
+	{ name: 'olya', age: 28, status: false },
+	{ name: 'max', age: 30, status: true },
+	{ name: 'anya', age: 31, status: false },
+	{ name: 'oleg', age: 28, status: false },
+	{ name: 'andrey', age: 29, status: true },
+	{ name: 'masha', age: 30, status: true },
+	{ name: 'olya', age: 31, status: false },
+	{ name: 'max', age: 31, status: true }];
 //19 - відсортувати його за  віком (зростання , а потім окремо спадання)
-//20 - відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)
-//21 - пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін)
+let usersSort = users.sort(function (a, b) {
+	return b.age - a.age;
+})
+console.log(usersSort);
+
+let usersSort2 = users.sort(function (a, b) {
+	return a.age - b.age;
+})
+console.log(usersSort2);
+//20 - відсортувати його за кількістю знаків в імені  
+//(зростання , а потім окремо спадання)
+// let word4 = words.filter(word => word.length <= 4);
+// console.log(word4);
+let usersSimbol = users.sort(function (a, b) {
+	return a.name.length - b.name.length
+})
+console.log(usersSimbol);
+
+let usersSimbol2 = users.sort(function (a, b) {
+	return b.name.length - a.name.length
+})
+console.log(usersSimbol);
+
+//21 - пройтись по ньому та додати кожному юзеру поле id - 
+//яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), 
+//та зберегти це в новий масив (первинний масив залишиться без змін)
+
+
 //22 - відсортувати його за індентифікатором
 
 
