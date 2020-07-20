@@ -50,9 +50,9 @@ let words = ['orem', 'ipsum', 'Dolor', 'ame', 'consectetur', 'Adipisicing', 'orr
 
 
 //11 -- отсортировать его по алфавиту в восходящем порядке.
-let sortWords = words.sort((a,b)=>{
-	if(a.toLowerCase()<b.toLowerCase())return-1;
-	if(a.toLowerCase()>b.toLowerCase())return 1;
+let sortWords = words.sort((a, b) => {
+	if (a.toLowerCase() < b.toLowerCase()) return -1;
+	if (a.toLowerCase() > b.toLowerCase()) return 1;
 	return 0;
 });
 
@@ -111,33 +111,33 @@ console.log(usersSimbol);
 //яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), 
 //та зберегти це в новий масив (первинний масив залишиться без змін)
 
-let usersId = users.map ((user,id) =>{
-	user.id= id+1;
+let usersId = users.map((user, id) => {
+	user.id = id + 1;
 	return user;
 });
-console.log (usersId);
+console.log(usersId);
 //22 - відсортувати його за індентифікатором
-let userSort = users.sort (function (user1,user2) {
-	return user2.id-user1.id;
+let userSort = users.sort(function (user1, user2) {
+	return user2.id - user1.id;
 })
-console.log (userSort);
+console.log(userSort);
 // 25 -- наисать функцию калькулятора с 2мя числами и колбеком
-function calculate (a,b,callback) {
-	return callback (a,b);
+function calculate(a, b, callback) {
+	return callback(a, b);
 }
-let result=calculate (10,20, function callback(a,b) {
-	return a+b;
+let result = calculate(10, 20, function callback(a, b) {
+	return a + b;
 })
-console.log (result);
+console.log(result);
 
 //26 -- наисать функцию калькулятора с 3мя числами и колбеком
-function calculate2 (a,b,c,callback2) {
-	return callback2 (a,b,c);
+function calculate2(a, b, c, callback2) {
+	return callback2(a, b, c);
 }
-let result2=calculate2 (10,20,2, function callback2(a,b,c) {
-	return a+b*c;
+let result2 = calculate2(10, 20, 2, function callback2(a, b, c) {
+	return a + b * c;
 })
-console.log (result2);
+console.log(result2);
 
 
 
@@ -151,41 +151,41 @@ console.log (result2);
 
 
 //37 
-let cars = [ {producer:"subaru",model: "wrx",year: 2010, color:"blue",type: "sedan",engine: "ej204x",volume: 2,power: 400}, 
-{producer:"subaru",model: "legacy",year: 2007, color:"silver",type: "sedan",engine: "ez30",volume: 3,power: 250}, 
-{producer:"subaru",model: "tribeca",year: 2011, color:"white",type: "jeep",engine: "ej20",volume: 2,power: 300}, 
-{producer:"subaru",model: "leone",year: 1998, color:"yellow",type: "sedan",engine: "ez20x",volume: 2,power: 140}, 
-{producer:"subaru",model: "impreza",year: 2014, color:"red",type: "sedan",engine: "ej204x",volume: 2,power: 200}, 
-{producer:"subaru",model: "outback",year: 2014, color:"red",type: "hachback",engine: "ej204",volume: 2,power: 165}, 
-{producer:"bmw",model: "115",year: 2013, color:"red",type: "hachback",engine: "f15",volume: 1.5,power: 120}, 
-{producer:"bmw",model: "315",year: 2010, color:"white",type: "sedan",engine: "f15",volume: 1.5, power: 120}, 
-{producer:"bmw",model: "650",year: 2009, color:"black",type: "coupe",engine: "f60",volume: 6,power: 350}, 
-{producer:"bmw",model: "320",year: 2012, color:"red",type: "sedan",engine: "f20",volume: 2,power: 180}, 
-{producer:"mercedes",model: "e200",year: 1990, color:"silver",type: "sedan",engine: "eng200",volume: 2,power: 180}, 
-{producer:"mercedes",model: "e63",year: 2017, color:"yellow",type: "sedan",engine: "amg63",volume:3,power: 400}, 
-{producer:"mercedes",model: "c250",year: 2017, color:"red",type: "sedan",engine: "eng25",volume: 2.5,power: 230} ];
+let cars = [{ producer: "subaru", model: "wrx", year: 2010, color: "blue", type: "sedan", engine: "ej204x", volume: 2, power: 400 },
+{ producer: "subaru", model: "legacy", year: 2007, color: "silver", type: "sedan", engine: "ez30", volume: 3, power: 250 },
+{ producer: "subaru", model: "tribeca", year: 2011, color: "white", type: "jeep", engine: "ej20", volume: 2, power: 300 },
+{ producer: "subaru", model: "leone", year: 1998, color: "yellow", type: "sedan", engine: "ez20x", volume: 2, power: 140 },
+{ producer: "subaru", model: "impreza", year: 2014, color: "red", type: "sedan", engine: "ej204x", volume: 2, power: 200 },
+{ producer: "subaru", model: "outback", year: 2014, color: "red", type: "hachback", engine: "ej204", volume: 2, power: 165 },
+{ producer: "bmw", model: "115", year: 2013, color: "red", type: "hachback", engine: "f15", volume: 1.5, power: 120 },
+{ producer: "bmw", model: "315", year: 2010, color: "white", type: "sedan", engine: "f15", volume: 1.5, power: 120 },
+{ producer: "bmw", model: "650", year: 2009, color: "black", type: "coupe", engine: "f60", volume: 6, power: 350 },
+{ producer: "bmw", model: "320", year: 2012, color: "red", type: "sedan", engine: "f20", volume: 2, power: 180 },
+{ producer: "mercedes", model: "e200", year: 1990, color: "silver", type: "sedan", engine: "eng200", volume: 2, power: 180 },
+{ producer: "mercedes", model: "e63", year: 2017, color: "yellow", type: "sedan", engine: "amg63", volume: 3, power: 400 },
+{ producer: "mercedes", model: "c250", year: 2017, color: "red", type: "sedan", engine: "eng25", volume: 2.5, power: 230 }];
 //38 Відфільтрувати масив за наступними крітеріями :
 //39 - двигун більше 3х літрів
-let resultVolume=cars.filter (car=>car.volume>=3);
-console.log (resultVolume);
+let resultVolume = cars.filter(car => car.volume >= 3);
+console.log(resultVolume);
 //40 - двигун = 2л
-let resultVolume2=cars.filter (car=>car.volume===2);
-console.log (resultVolume2);
+let resultVolume2 = cars.filter(car => car.volume === 2);
+console.log(resultVolume2);
 //41 - виробник мерс
-let resProduser=cars.filter (car=>car.producer==='mercedes')
-console.log (resProduser);
+let resProduser = cars.filter(car => car.producer === 'mercedes')
+console.log(resProduser);
 //42 - двигун більше 3х літрів + виробник мерседес
-let resVolPro=cars.filter (car=>(car.volume>=3) && (car.producer==='mercedes'))
-console.log (resVolPro);
+let resVolPro = cars.filter(car => (car.volume >= 3) && (car.producer === 'mercedes'))
+console.log(resVolPro);
 //43 - двигун більше 3х літрів + виробник субару
-let resVolPro2=cars.filter (car=>car.volume>=3&&car.producer==='subaru');
-console.log (resVolPro2);
+let resVolPro2 = cars.filter(car => car.volume >= 3 && car.producer === 'subaru');
+console.log(resVolPro2);
 //44 - сили більше ніж 300
 //45 - сили більше ніж 300 + виробник субару
 //46 - мотор серіі ej
 //47 - сили більше ніж 300 + виробник субару + мотор серіі ej
-let resPowProdMotor=cars.filter(car=>car.power>=300 && car.producer==='subaru'&& car.engine.startsWith ('ej') );
-console.log (resPowProdMotor);
+let resPowProdMotor = cars.filter(car => car.power >= 300 && car.producer === 'subaru' && car.engine.startsWith('ej'));
+console.log(resPowProdMotor);
 //48 - двигун меньше 3х літрів + виробник мерседес
 //49 - двигун більше 2л + сили більше 250
 //50 - сили більше 250  + виробник бмв
@@ -194,51 +194,60 @@ console.log (resPowProdMotor);
 
 //54 - взять слдующий массив
 //55 
-let usersWithAddress = [{id: 1, name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}}, 
-{id: 2, name: 'petya', age: 30, status: true, address: {city: 'aLviv', street: 'Shevchenko', number: 1}},
- {id: 3, name: 'kolya', age: 29, status: true, address: {city: 'bLviv', street: 'Shevchenko', number: 121}}, 
- {id: 4, name: 'olya', age: 28, status: false, address: {city: 'cLviv', street: 'Shevchenko', number: 90}}, 
- {id: 5, name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}}, 
- {id: 6, name: 'anya', age: 31, status: false, address: {city: 'dLviv', street: 'Shevchenko', number: 2}}, 
- {id: 7, name: 'oleg', age: 28, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 22}}, 
- {id: 8, name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}}, 
- {id: 9, name: 'masha', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 12}}, 
- {id: 10, name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}}, 
- {id: 11, name: 'max', age: 31, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}}];
+let usersWithAddress = [{ id: 1, name: 'vasya', age: 31, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 16 } },
+{ id: 2, name: 'petya', age: 30, status: true, address: { city: 'aLviv', street: 'AShevchenko', number: 1 } },
+{ id: 3, name: 'kolya', age: 29, status: true, address: { city: 'bLviv', street: 'Shevchenko', number: 121 } },
+{ id: 4, name: 'olya', age: 28, status: false, address: { city: 'cLviv', street: 'Shevchenko', number: 90 } },
+{ id: 5, name: 'max', age: 30, status: true, address: { city: 'Lviv', street: 'BShevchenko', number: 115 } },
+{ id: 6, name: 'anya', age: 31, status: false, address: { city: 'dLviv', street: 'Shevchenko', number: 2 } },
+{ id: 7, name: 'oleg', age: 28, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 22 } },
+{ id: 8, name: 'andrey', age: 29, status: true, address: { city: 'Lviv', street: 'Shevchenko', number: 43 } },
+{ id: 9, name: 'masha', age: 30, status: true, address: { city: 'Lviv', street: 'CShevchenko', number: 12 } },
+{ id: 10, name: 'olya', age: 31, status: false, address: { city: 'Lviv', street: 'Shevchenko', number: 16 } },
+{ id: 11, name: 'max', age: 31, status: true, address: { city: 'Lviv', street: 'Shevchenko', number: 121 } }];
 //56 -- отсортировать его по id пользователей
-let userId =usersWithAddress.sort((user1,user2)=>{
-	if(user1.id>user2.id) return 1;
-	if(user1.id>user2.id) return -1;
+let userId = usersWithAddress.sort((user1, user2) => {
+	if (user1.id > user2.id) return 1;
+	if (user1.id > user2.id) return -1;
 });
-console.log (userId);
+console.log(userId);
 //57 -- отсортировать его по id пользователей в обратном опрядке
-let userId2 =usersWithAddress.sort((user1,user2)=>{
-	if(user1.id>user2.id) return 1;
-	if(user1.id>user2.id) return -1;
+let userId2 = usersWithAddress.sort((user1, user2) => {
+	if (user1.id > user2.id) return 1;
+	if (user1.id > user2.id) return -1;
 });
-console.log (userId2);
+console.log(userId2);
 //58 -- отсортировать его по возрасту пользователей
 //59 -- отсортировать его по возрасту пользователей в обратном порядке
 //60 -- отсортировать его по имени пользователей
 //61 -- отсортировать его по имени пользователей в обратном порядке
 //62 -- отсортировать его по названию улицы  в алфавитном порядке
-let userAdres =usersWithAddress.sort ((user1,user2)=>{
-	if (user1.address.city>user2.address.city) return 1;/// Запитати як достукатись до адресу;
-	if (user1.address.city>user2.address.city) return -1;
+let userAdres = usersWithAddress.sort((user1, user2) => {
+	if (user1.address.street > user2.address.street) {
+		return 1;
+	}
+	return -1;
 });
-console.log (userAdres);
+console.log(userAdres);
 //63 -- отсортировать его по номеру дома по возрастанию
 //64 -- отфильтровать (оставить) тех кто младше 30
 //65 -- отфильтровать (оставить) тех у кого отрицательный статус
 //66 -- отфильтровать (оставить) тех у кого отрицательный статус и младше 30 лет
 //67 -- отфильтровать (оставить) тех у кого номер дома четный
-let userHouse =usersWithAddress.sort ((user)=> { /// Запитати як ;
-	(user.age)%2===0
-	return user.age;
-}) ;
-
-
-console.log (userHouse);
+// let arrEmp = [];
+// let userHouse = usersWithAddress.sort((user) => { 
+// 	if (((user.address.number) % 2 === 0)) {
+// 		arrEmp.push( user.address.number)
+// 	}
+// });
+// console.log(arrEmp);
+let arrEmp = [];
+let userHouse = usersWithAddress.filter((user) => { 
+	if (((user.address.number) % 2 === 0)) {
+		return true
+	}
+});
+console.log(userHouse);
 
 
 
