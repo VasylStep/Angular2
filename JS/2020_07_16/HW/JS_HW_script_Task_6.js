@@ -41,6 +41,7 @@
 //17 Дан масив :
 //18 
 let users = [
+	
 	{ name: 'vasya', age: 31, status: false },
 	{ name: 'petya', age: 30, status: true },
 	{ name: 'kolya', age: 29, status: true },
@@ -52,6 +53,7 @@ let users = [
 	{ name: 'masha', age: 30, status: true },
 	{ name: 'olya', age: 31, status: false },
 	{ name: 'max', age: 31, status: true }];
+	
 //19 - відсортувати його за  віком (зростання , а потім окремо спадання)
 // let usersSort = users.sort( (a, b)=>(a.age - b.age) )
 // console.log(usersSort);
@@ -75,6 +77,7 @@ let usersId = users.map((user, id) => {
 	return user;
 });
 console.log(usersId);
+
 //22 - відсортувати його за індентифікатором
 // let userSort = users.sort( (user1, user2)=> (user1.id - user2.id))
 // console.log(userSort);
@@ -92,9 +95,11 @@ function calculate2(a, b, c, callback2) {
 	return callback2(a, b, c);
 }
 let result2 = calculate2(10, 20, 2, function callback2(a, b, c) {
+
 	return a + b * c;
 })
 console.log(result2);
+
 
 
 
@@ -207,8 +212,10 @@ let usersWithAddress = [{ id: 1, name: 'vasya', age: 31, status: false, address:
 // let userStatusAge = usersWithAddress.filter(user => user.status ===false&&user.age < 30);
 // console.log(userStatusAge);
 //67 -- отфильтровать (оставить) тех у кого номер дома четный
-// let userHouse2 = usersWithAddress.filter(user => (user.address.number) % 2 === 0);
-// console.log(userHouse2);
+let userHouse2 = usersWithAddress.filter(user => (user.address.number) % 2 === 0);
+console.log('userHouse2', userHouse2)
+
+console.log(userHouse2);
 
 // ===========================
 // ======ДОПОЛНИТЕЛЬНО========
@@ -237,3 +244,13 @@ let usersWithAddress = [{ id: 1, name: 'vasya', age: 31, status: false, address:
 // Answer: MinIndex = 0, MaxIndex = 0.
 // 2. Key = 4
 // Answer: MinIndex = 3, MaxIndex = 6.
+
+
+let hhh = [1, 2, 3, 5, 4, 8];
+
+
+
+
+
+
+
