@@ -1,3 +1,6 @@
+//45 - маю питання як працює
+//48 - маю питання як працює
+
 //1 - Создать произвольный елемент с id = text.  Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
 // const btn=document.getElementById ("myBtn");
 // btn.onclick=ev=>{
@@ -31,7 +34,7 @@
 // 	}
 // }
 //7 - Создайте меню, которое раскрывается/сворачивается при клике
-// const a1=document.getElementById ('a1');
+// const a1=document.getElementById ('a1');                      ///тої задачі не зрозумів-- треба запитати ментора
 // const subMenu=document.getElementById ('subMenu');
 // let flag = false;
 // a1.onclick = event => {
@@ -44,19 +47,22 @@
 // 	}
 // }
 
+
+
 //9 - Создать список комментариев , 
 //пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
 // Вывести список комментариев в документ, каждый в своем блоке.
 //  Добавьте каждому комментарию по кнопке для сворачивания его body.
+// задачу зрозумів і розібрався -- не складна але самому дійти не вдається. Нічого прорвемся :)
 
 // let commentArrray = [
-// 	{title : 'lorem', body:'lorem ipsum dolo sit ameti'},
-// 	{title : 'lorem', body:'lorem ipsum dolo sit ameti'},
-// 	{title : 'lorem', body:'lorem ipsum dolo sit ameti'},
-// 	{title : 'lorem', body:'lorem ipsum dolo sit ameti'},
-// 	{title : 'lorem', body:'lorem ipsum dolo sit ameti'},
-// 	{title : 'lorem', body:'lorem ipsum dolo sit ameti'},
-// 	{title : 'lorem', body:'lorem ipsum dolo sit ameti'},
+// 	{title : 'lorem1', body:'lorem ipsum dolo sit ameti'},
+// 	{title : 'lorem2', body:'lorem ipsum dolo sit ameti'},
+// 	{title : 'lorem3', body:'lorem ipsum dolo sit ameti'},
+// 	{title : 'lorem4', body:'lorem ipsum dolo sit ameti'},
+// 	{title : 'lorem5', body:'lorem ipsum dolo sit ameti'},
+// 	{title : 'lorem6', body:'lorem ipsum dolo sit ameti'},
+// 	{title : 'lorem7', body:'lorem ipsum dolo sit ameti'},
 // ];
 
 // const content=document.getElementById ('content');
@@ -66,7 +72,7 @@
 // 	const p=document.createElement ('p');
 // 	const button=document.createElement ('button');
 // 	button.innerText = 'Hide'; 
-// 	h2.innerText=item.title; // шо таке  item.title шо таке тітле?.
+// 	h2.innerText=item.title; 
 // 	p.innerText=item.body;
 
 // 	button.onclick =()=>{
@@ -77,7 +83,7 @@
 // 	div.appendChild (h2);
 // 	div.appendChild (p);
 // 	div.appendChild (button);
-// 	content.appendChild(div);
+// 	content.appendChild(div);                
 // })
 
 
@@ -100,7 +106,7 @@
 //18 Перший аргумент визначає кількість строк.
 //19 Другий параметр визначає кліькіть ячеєк в кожній строці.
 //20 Третій параметр визначає елемент в який потрібно таблицю додати.
-// const content=document.getElementById ("content"); // не зрозумів той код ??????
+// const content=document.getElementById ("content"); 
 // function createTable(rows,cols,tag) {
 // 	const table=document.createElement ('table');
 // 	for (let i = 0; i < rows; i++) {
@@ -115,14 +121,14 @@
 // 	}
 // 	tag.appendChild (table);
 // }
-// createTable (4,5,content);
+// createTable (10,15,content);   
 
 //23 - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //24 При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 //25 (Додатковачастина для завдання)
 
 //27 - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
-// let imgArray = [    // не працює права кнопка.
+// let imgArray = [   
 // 	{
 // 		id:1,
 // 		img_url: 'girls_dresses_14.jpg'
@@ -157,7 +163,7 @@
 // 	img.src=imgArray[index].img_url
 // }
 // btn2.onclick = () => {
-// 	index+1>mgArray.length -1
+// 	index+1>imgArray.length -1
 // 	? index = 0
 // 	: index = index+1
 // 	img.src=imgArray[index].img_url
@@ -169,17 +175,33 @@
 
 
 //30 - Сворити масив не цензцрних слів.
+
 // Сворити інпут текстового типу.
 // Якщо людина вводить слово і воно міститься в масиві не цензурних слів
 // кинути алерт з попередженням.
 // Перевірку робити при натисканні на кнопку
 
+// списав - сам не зміг зробити.
+// let abuses = ['бевзень', 'бусурман', 'бешкетник', 'вишкребок', 'волоцюга', 'гаспид', 'дідько', 'дурбелик'];
+//   // let freeText = document.forms.myForm5.freeText;
+//   let freeText =document.getElementById ('freeText')
+
+//   let fifthButton =document.getElementById ('fifthButton')
+
+//   fifthButton.onclick = () => {
+//    abuses.forEach(abuse => {
+//     if (freeText.value === abuse) { 
+//      alert('Ану не лаятись!');
+//     }  
+//    });
+//    freeText.value = alert ('Вух пронесло'); }
 
 //37 - Сворити масив не цензцрних слів.
 // Сворити інпут текстового типу.
 // Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 // Кинути алерт з попередженням у випадку якщо містить.
 // Перевірку робити при натисканні на кнопку
+
 
 
 
@@ -192,9 +214,10 @@
 // for (let i = 0; i < arrayH2.length; i++) {
 // 	const li=document.createElement('li');
 // 	const a =document.createElement ('a');
-// 	let yakor = 'yakor'+i;
-// 	a.href='#'+yakor;
-// 	arrayH2[i].setAttribute('id',yakor);
+//   let yakor = 'yakor'+i;                            /// Вже питався - але не розумію як воно працює -- 
+//                                                           //як переходить по якорям
+//   a.href='#'+yakor;                                       // Як воно знає шо коли тицьк --- треба йти на такий то якор.
+// 	arrayH2[i].setAttribute('id',yakor);                    //   не розумію
 // 	a.innerHTML=arrayH2[i].innerText;
 // 	li.appendChild(a);
 // 	ul.appendChild(li);
@@ -225,7 +248,7 @@ let usersWithAddress = [
 // 2й - оставляет старше 29 лет включительно
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
-const content = document.getElementById('content'); // розібратись і знайти помилку бо не працює.
+const content = document.getElementById('content'); // не зрозумів функцій з того коду
 const userDiv = document.createElement('div');
 userDiv.appendChild(renderContent(usersWithAddress));
 
@@ -259,7 +282,7 @@ content.appendChild(input3);
 content.appendChild(button);
 
 button.onclick = ev => {
-	let mgArray = JSON.parse(JSON.stringify(usersWithAddress))
+	let myArray = JSON.parse(JSON.stringify(usersWithAddress))                                 // не зрозумів функцій з того коду
 	if (input1.checked) myArray = myArray.filter(value => !value.status);
 	if (input2.checked) myArray = myArray.filter(value => value.age >= 29);
 	if (input3.checked) myArray = myArray.filter(value => value.address.city === 'Kyiv');
@@ -270,7 +293,7 @@ button.onclick = ev => {
 }
 
 
-function renderContent(array) {
+function renderContent(array) {                                         // не зрозумів функцій з того коду
 	const main = document.createElement('div');
 	array.forEach(item => {
 		const div = document.createElement('div');
@@ -292,3 +315,5 @@ function renderContent(array) {
 
 
 //76 *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+
+

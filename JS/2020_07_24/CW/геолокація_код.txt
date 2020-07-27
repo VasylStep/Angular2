@@ -1,0 +1,3 @@
+navigator.geolocation.getCurrentPosition((geo) => 
+{  console.log(geo.coords.latitude);  
+console.log(geo.coords.longitude);})
