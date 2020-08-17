@@ -1,0 +1,130 @@
+1. +������� ��� �볺���, �� ��'� �� ����� ��� 6 �������.� 
+// select*from bank.client where length(FirstName)=6;
+
+2. +������� ������� �������� �����.+ 
+//SELECT * FROM bank.client where City= 'lviv';
+
+3. +������� �볺��� � ����� ������ �� ����������� �� �������.
+//SELECT * FROM bank.client where Education='high' order by LastName;
+
+4. +�������� ���������� � ����������� ������� ��� �������� ������ � ������� 5 �������� ��������.
+//SELECT * FROM application ORDER BY Sum desc limit 5
+
+5. +������� ��� �볺���, �� ������� ���������� �� OV �� OVA. 
+// select * from bank.client where LastName like '%iv'
+// select * from bank.client where LastName like '%ko'
+
+6. +������� �볺��� �����, �� �������������� ��������� ����������.
+// SELECT * FROM bank.client where city = 'Kyiv';
+
+7. +������� ����� �볺��� �� ���� ������ ��������, ������������ �� �� �������.
+//������
+
+8. +������� ���� ��� �볺���, �� ����� ������ ����� ��� �� 5000 ����� �������.
+//SELECT * FROM bank.client
+join application on client.idClient=application.Client_idClient
+where sum>5000;
+
+9. +���������� ������� �볺��� ��� ������� �� ���� ��������� �������.
+//SELECT COUNT(idClient) FROM client;
+//SELECT COUNT(idClient) FROM client where City = 'Lviv';
+
+10. ������ �������, �� ����� �������� ���� ��� ������� �볺��� ������.
+//select FirstName,LastName, Sum
+from bank.client 
+join bank.application on 
+client.idClient = application.Client_idClient 
+WHERE Sum IN (SELECT max(Sum) FROM bank.application )
+
+
+11. ��������� ������� ������ �� ������ ��� ������� �볺���.
+//SELECT count(Sum) FROM bank.application;
+
+
+12. ��������� ��������� �� ��������� �������.
+//SELECT  max(sum) from bank.application
+//SELECT  min(sum) from bank.application
+
+13. ���������� ������� ������� ��� �볺���,�� ����� ���� �����.
+//SELECT   count(Client_idClient)
+ FROM bank.client join application on client.idClient=application.Client_idClient
+ where Education = 'High';
+
+
+14. ������� ���� ��� �볺���, � ����� ������� ���� ������� �������.
+//select *, AVG(bank.application.Sum) as avg_sum
+from bank.client 
+join bank.application on client.idClient = application.Client_idClient
+group by FirstName
+order by avg_sum DESC limit 1
+;
+
+
+15. ������� ��������, ��� ������ � ������� �������� ������
+
+
+16. ������� ��������, ��� ������ ��������� ������.
+
+
+17. ��� �볺����, �� ����� ���� �����, ���������� �� ���� ������� � ����� 6000 ���.
+//update client c
+join application a on c.idClient = a.Client_idClient
+set a.Sum=6000 where c.Education = 'high';
+
+18. ��� �볺��� �������� ������� ���������� �� ����. 
+//update client 
+set client.City= 'Kyiv' where client.City = 'Lviv';
+
+19. �������� �� �������, �� � ���������.
+
+//delete from bank.application where CreditState like 'returned';
+
+
+20. �������� ������� �볺���, � ���� ����� ����� ������� � ��������.
+//delete from bank.client 
+where LastName like '_e%' 
+or  LastName like '_u%' 
+or LastName like '_i%' 
+or LastName like '_o%' 
+or LastName like '_a%' ;
+
+
+
+������ ������� ��������, �� ������ ������� �� �������� ���� ����� ��� 5000
+
+
+
+
+
+
+������ �볺���, �� �������� �������� ������� �� ���� ����� ��� 5000
+
+
+
+
+
+/* ������ ������������ ������������ ������.*/
+
+
+
+
+/*������ �볺���, ���� ������� ����� ��������*/
+
+
+
+
+/*������ �������, ���� ���� ����� �� ������� �������� ��� �������*/
+
+
+
+/*������ �볺���, �� � � ���� ������ ����, �� � �볺��, ���� ���� �������� ������� �������*/
+
+
+
+#���� ������ ���� ������ �������� �������
+
+
+
+set sql_safe_updates = 0;
+set sql_safe_updates = 1;
+//
