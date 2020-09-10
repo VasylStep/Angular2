@@ -1,4 +1,4 @@
-.grey {
+/* .grey {
     background: grey;
 }
 .yellow {
@@ -9,4 +9,15 @@
 }
 .blue {
     background: blue;
+} */
+
+.car {
+    width: 30%;
+    margin: 10px 31%;
+    background: #fafafa;
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 1.2% 2%;
+    columns: #474747;
+    front-size: 1.1em;
 }

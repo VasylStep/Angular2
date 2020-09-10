@@ -41,7 +41,7 @@
 //17 Дан масив :
 //18 
 let users = [
-	
+
 	{ name: 'vasya', age: 31, status: false },
 	{ name: 'petya', age: 30, status: true },
 	{ name: 'kolya', age: 29, status: true },
@@ -53,7 +53,7 @@ let users = [
 	{ name: 'masha', age: 30, status: true },
 	{ name: 'olya', age: 31, status: false },
 	{ name: 'max', age: 31, status: true }];
-	
+
 //19 - відсортувати його за  віком (зростання , а потім окремо спадання)
 // let usersSort = users.sort( (a, b)=>(a.age - b.age) )
 // console.log(usersSort);
