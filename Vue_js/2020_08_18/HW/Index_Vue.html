@@ -13,11 +13,22 @@
    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
    <div id="app">
-      <!-- <span @mouseover="title='Text'">Text</span> -->
-      <span @mouseover="changeText">Text</span>
-      <p>{{title}}</p>
-      <p :class="styleCSS">  Colour:{{styleCSS}}</p>
-      <input type="text"v-on:input="styleCSS=$event.target.value">
+      <button @click="show = !show">Скрити/показати</button>
+      <!-- <span @mouseover="title='Text'">Text</span> 
+    <span @mouseover="changeText">Text</span> -->
+
+      <!-- <p>{{title}}</p> -->
+      <!-- <p :class="styleCSS"> Colour:{{styleCSS}}</p>
+      <input type="text" v-on:input="styleCSS=$event.target.value"> -->
+
+      <!-- <input type="text" v-on:input="increment($event.target.value)">
+      <p>{{value}}</p>
+      <p>{{doubleValue}}</p> -->
+      <p v-if="show">Текст який може стати невидимим</p>
+      <p v-else>Текст2</p>
+      <ul>
+         <li v-for="car,i in cars">{{i+1}}---{{car.model}}, {{car.speed}}</li>
+      </ul>
    </div>
    <script src="main.js"></script>
 </body>
