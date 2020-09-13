@@ -13,90 +13,56 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae2c3bbd-2852-4b46-aecd-ea97d159b084" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HW/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/Angular0.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular0/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/Angular.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/app/models/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Angular1/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../JS/2020_07_16/HW/JS_HW_script_Task_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../JS/2020_07_16/HW/JS_HW_script_Task_6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Vue_js/2020_08_18/HW/Index_Vue.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vue_js/2020_08_18/HW/Index_Vue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Vue_js/2020_08_18/HW/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vue_js/2020_08_18/HW/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Vue_js/2020_08_18/HW/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Vue_js/2020_08_18/HW/style.css" afterDir="false" />
+    <list default="true" id="ae2c3bbd-2852-4b46-aecd-ea97d159b084" name="Default Changelist" comment="Добавив файл 888">
+      <change afterPath="$PROJECT_DIR$/HW/888.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Angular3/Angular3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Angular2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/e2e/src/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/e2e/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Angular2/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Angular2/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -108,10 +74,25 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Angular2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -123,6 +104,7 @@
       <updated>1599752328633</updated>
       <workItem from="1599752332416" duration="108000" />
       <workItem from="1599753769225" duration="74000" />
+      <workItem from="1600010453211" duration="334000" />
     </task>
     <servers />
   </component>
@@ -136,6 +118,16 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -146,12 +138,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Добавив файл 888" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавив файл 888" />
   </component>
   <component name="WindowStateProjectService">
     <state x="462" y="109" key="FileChooserDialogImpl" timestamp="1599753841334">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="109" key="FileChooserDialogImpl/0.0.1366.738/-1152.0.1152.864@0.0.1366.738" timestamp="1599753841334" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1600010841250">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738/-1152.0.1152.864@0.0.1366.738" timestamp="1600010841250" />
     <state x="65" y="51" key="new project wizard" timestamp="1599752459721">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
